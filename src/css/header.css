@@ -1,0 +1,116 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  font-family: 'Inter Tight', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  /* padding: 0 16px; */
+}
+
+/* .header-navigation {
+  text-align: center;
+} */
+
+/* #region Header Mobile */
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  /* padding: 0; */
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+}
+
+.header-navigation {
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+/* #endregion Header Mobile */
+
+/* #region Modal */
+
+/* #endregion Modal */
+
+/* #region Header Tablet */
+
+@media only screen and (min-width: 768px) {
+  .header .container {
+    display: block;
+    padding: 0;
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-link {
+    color: inherit;
+    font-family: 'Inter Tight', sans-serif;
+  }
+
+  .menu {
+    text-decoration: underline;
+  }
+
+  .order {
+    display: flex;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    background-color: #c6e327;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+    transition: background-color 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .order:hover,
+  .order:focus {
+    background-color: #c6f327;
+  }
+}
+
+/* #endregion Header Tablet */
+
+/* #region Header Desktop */
+
+@media only screen and (min-width: 1440) {
+}
+
+/* #endregion Header Desktop */

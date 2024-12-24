@@ -1,0 +1,71 @@
+<section id="work-together" class="footer-section">
+  <div class="container footer-container">
+    <h2 class="footer-title">
+      <picture class="footer-img">
+        <source
+          srcset="
+            ./img/footer/work-together-desktop.png    1x,
+            ./img/footer/work-together-desktop@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/footer/work-together-mobile.png    1x,
+            ./img/footer/work-together-mobile@2x.png 2x
+          "
+        />
+        <img src="./img/footer/work-together-mobile.png" alt="" />
+      </picture>
+      Let's <span class="footer-accent">work</span> <span>together</span>
+    </h2>
+    <form class="footer-form">
+      <label for="work-together-input-email"></label>
+      <input
+        type="email"
+        id="work-together-input-email"
+        placeholder="clients@gmail.com"
+        class="footer-input footer-email"
+        name="client-email"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        required
+      />
+      <p class="email-succes visually-hidden">Success!</p>
+      <p class="email-invalid visually-hidden">Invalid email, try again</p>
+      <label for="work-together-input-comments"></label>
+      <input
+        type="text"
+        id="work-together-input-comments"
+        placeholder="comments"
+        class="footer-input footer-commets"
+        name="client-comments"
+        required
+      />
+      <button type="submit" class="footer-btn-send">Send</button>
+    </form>
+    <div class="footer-contacts-container">
+      <a
+        href="mailto:lloydjefferson@gmail.com"
+        class="footer-contact footer-email"
+        >lloydjefferson@gmail.com</a
+      >
+      <a href="tel:+3801111111111" class="footer-contact">+380 11 1111 11 11</a>
+    </div>
+  </div>
+  <div class="modal-backdrop-footer modal-backdrop-footer-closed">
+    <div class="modal-footer">
+      <button class="close-btn-footer" type="button" id="modal-close-footer">
+        <svg class="close-icon-footer" height="24" width="24">
+          <use href="./img/header/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <p class="modal-footer-title">
+        Thank you for your interest in cooperation!
+      </p>
+      <p class="modal-footer-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</section>
