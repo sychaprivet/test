@@ -155,17 +155,21 @@ ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
     flex: 1 1 calc(50%);
   }
 
+  ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
+    padding-right: 32px;
+  }
+
   /* FAQ button padding adjustment */
   ul.accordion-container li.ac button.ac-trigger.faq-button {
     padding-right: 82px;
   }
 
-  ul.accordion-container li.ac svg {
-    right: 50px;
+  ul.accordion-container li.ac:nth-child(-n + 3) svg {
+    right: 42px;
   }
 
-  ul.accordion-container li.ac .ac-trigger.faq-button::after {
-    right: 60px;
+  ul.accordion-container li.ac:nth-child(-n + 3) .ac-trigger.faq-button::after {
+    right: 52px;
   }
 
   /* left column */
